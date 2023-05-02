@@ -15,13 +15,13 @@ export class App extends Component {
   onLeaveFeedback = e => {
     switch (e) {
       case 'good':
-        this.setState(state => ({ good: state.good + 1 }));
+        this.setState(state => ({[e]: state[e] + 1 }));
         break;
       case 'neutral':
-        this.setState(state => ({ neutral: state.neutral + 1 }));
+        this.setState(state => ({ [e]:state[e] + 1 }));
         break;
       case 'bad':
-        this.setState(state => ({ bad: state.bad + 1 }));
+        this.setState(state => ({ [e]: state[e] + 1 }));
         break;
       default:
         return 0;
