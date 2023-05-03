@@ -13,19 +13,9 @@ export class App extends Component {
   };
 
   onLeaveFeedback = e => {
-    switch (e) {
-      case 'good':
-        this.setState(state => ({[e]: state[e] + 1 }));
-        break;
-      case 'neutral':
-        this.setState(state => ({ [e]:state[e] + 1 }));
-        break;
-      case 'bad':
-        this.setState(state => ({ [e]: state[e] + 1 }));
-        break;
-      default:
-        return 0;
-    }
+    
+            this.setState(state => ({[e]: state[e] + 1 }));
+            
   };
 
   countTotalFeedback = () => {
